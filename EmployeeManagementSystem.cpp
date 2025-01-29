@@ -44,8 +44,12 @@ class Employee {
 };
 
 int main() {
-    Employee. JohnDoe1;
+    Employee JohnDoe1;
     JohnDoe1.recordEmployee();
+
+    int x;
+    cout << "Enter the percentage increase in salary: ";
+    cin >> x;
     JohnDoe1.increaseSalary(x);
     JohnDoe1.displayEmployee();
     return 0;
