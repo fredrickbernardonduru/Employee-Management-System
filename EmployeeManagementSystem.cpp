@@ -13,11 +13,7 @@ class Employee {
 
     public:
 
-    Employee(string name, int age, float salary, string department) {
-        Name = name;
-        Age = age;
-        Salary = salary;
-        Department = department;
+    Employee() {
     }
 
     void recordEmployee() {
