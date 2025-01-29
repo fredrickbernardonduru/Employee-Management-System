@@ -14,11 +14,11 @@ class Employee {
 
     public:
 
-    Employee(string name, int age, float salary, string Department) {
+    Employee(string name, int age, float salary, string department) {
         Name = name;
         Age = age;
         Salary = salary;
-        Department = Department;
+        Department = department;
     }
 
     void recordEmployee() {
@@ -39,7 +39,7 @@ class Employee {
         cout <<"Employee Department: " << Department << endl;
     }
 
-    void increaseSalary() {
+    void increaseSalary(int x) {
         Salary = Salary + ((x/100)*Salary);
     }
 };
@@ -47,6 +47,7 @@ class Employee {
 
 
 int main() {
+    int x;
     string Name;
     int Age;
     float Salary;
@@ -59,7 +60,11 @@ int main() {
     cin >> Salary; 
     cout << "Enter Employee Department: "; 
     cin >> Department;
-    
+    cout << "Enter the percentage increase in salary: ";
+    cin >> x;
 
-    Employee JohnDoe1
+
+    Employee JohnDoe1(Name, Age, Salary, Department);
+    JohnDoe1.increaseSalary(x);
+    JohnDoe1.displayEmployee();
 }
