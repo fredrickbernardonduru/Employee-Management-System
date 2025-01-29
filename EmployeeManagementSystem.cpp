@@ -40,6 +40,26 @@ class Employee {
     }
 
     void increaseSalary() {
-        Salary +=
+        Salary = Salary + ((x/100)*Salary);
     }
 };
+
+
+
+int main() {
+    string Name;
+    int Age;
+    float Salary;
+    string Department;
+    cout << "Enter Employee Name: ";
+    cin >> Name;
+    cout << "Enter Employee Age: ";
+    cin >> Age;
+    cout << "Enter Employee Salary: ";
+    cin >> Salary; 
+    cout << "Enter Employee Department: "; 
+    cin >> Department;
+    
+
+    Employee JohnDoe1
+}
