@@ -44,23 +44,9 @@ class Employee {
 };
 
 int main() {
-    int x;
-    string Name;
-    int Age;
-    float Salary;
-    string Department;
-    cout << "Enter Employee Name: ";
-    cin >> Name;
-    cout << "Enter Employee Age: ";
-    cin >> Age;
-    cout << "Enter Employee Salary: ";
-    cin >> Salary; 
-    cout << "Enter Employee Department: "; 
-    cin >> Department;
-    cout << "Enter the percentage increase in salary: ";
-    cin >> x;
-
-    Employee JohnDoe1(Name, Age, Salary, Department);
+    Employee. JohnDoe1;
+    JohnDoe1.recordEmployee();
     JohnDoe1.increaseSalary(x);
     JohnDoe1.displayEmployee();
+    return 0;
 }
