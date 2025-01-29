@@ -31,4 +31,15 @@ class Employee {
         cout << "Enter Employee Department: ";
         cin >> Department;
     }
+
+    void displayEmployee() {
+        cout <<"Employee Name: " << Name << endl;
+        cout <<"Employee Age: " << Age << endl;
+        cout <<"Employee Salary: " << Salary << endl;
+        cout <<"Employee Department: " << Department << endl;
+    }
+
+    void increaseSalary() {
+        Salary +=
+    }
 };
