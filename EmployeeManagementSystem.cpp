@@ -11,7 +11,6 @@ class Employee {
     float Salary;
     string Department;
 
-
     public:
 
     Employee(string name, int age, float salary, string department) {
@@ -40,11 +39,9 @@ class Employee {
     }
 
     void increaseSalary(int x) {
-        Salary = Salary + ((x/100)*Salary);
+        Salary = Salary + ((x / 100.0) * Salary);
     }
 };
-
-
 
 int main() {
     int x;
@@ -62,7 +59,6 @@ int main() {
     cin >> Department;
     cout << "Enter the percentage increase in salary: ";
     cin >> x;
-
 
     Employee JohnDoe1(Name, Age, Salary, Department);
     JohnDoe1.increaseSalary(x);
